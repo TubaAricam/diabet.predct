@@ -1,54 +1,43 @@
-Veri seti ABD'deki Ulusal Diyabet-Sindirim-Böbrek Hastalıkları Enstitüleri'nde tutulan büyük veri setinin parçasıdır. ABD'deki
-Arizona Eyaleti'nin en büyük 5. şehri olan Phoenix şehrinde yaşayan 21 yaş ve üzerinde olan Pima Indian kadınları üzerinde
-yapılan diyabet araştırması için kullanılan verilerdir.
-![image](https://user-images.githubusercontent.com/84075546/149348854-78b37405-4bdd-4b62-a57c-46ee300daf24.png)
+INTRODUCTION
+
+The dataset is part of the large dataset held at the National Institutes of Diabetes-Digestive-Kidney Diseases in the USA. in the USA
+On Pima Indian women aged 21 and over living in Phoenix, the 5th largest city in the State of Arizona.
+Data used for diabetes research.
+
+🍀 Pregnancies                              :Hamilelik sayısı
+
+🍀 Glucose                                  :Oral glikoz tolerans testinde 2 saatlik plazma glikoz konsantrasyonu 
+
+🍀 BloodPressure                            :Kan Basıncı (Küçük tansiyon) (mm Hg)
+
+🍀 SkinThickness                            :Cilt Kalınlığı
+
+🍀 Insulin                                  :2 saatlik serum insülini (mu U/ml)
+
+🍀 BMI                                      :Vücut kitle endeksi
+
+🍀 DiabetesPedigreeFunction                 :Fonksiyon (Oral glikoz tolerans testinde 2 saatlik plazma glikoz konsantrasyonu) 
+
+🍀 Age                                      :Yaş (yıl)
+
+🍀 Outcome                                  :Hastalığa sahip (1) ya da değil (0)
 
 
+Without going into the details of diabetes types, let's review the relationship between our variables and diabetes. 
 
--Pregnancies              :Hamilelik sayısı
--Glucose                  :Oral glikoz tolerans testinde 2 saatlik 
-                           plazma glikoz konsantrasyonu
--BloodPressure            :Kan Basıncı (Küçük tansiyon) (mm Hg)
--SkinThickness            :Cilt Kalınlığı
--Insulin                  :2 saatlik serum insülini (mu U/ml)
--BMI                      :Vücut kitle endeksi
--DiabetesPedigreeFunction :Fonksiyon (Oral glikoz tolerans testinde 2 
-                           saatlik plazma glikoz konsantrasyonu)
--Age                      :Yaş (yıl)
--Outcome                  :Hastalığa sahip (1) ya da değil (0)
-Diyabet çeşitlerinin ayrıntısına girmeden verilen değişkenlerimiz ile diyabet ilişkisini gözden geçirelim. 
+🦋 Diabetes is divided into 2 types:
 
-Diyabet çeşidi 2 ye ayrılır:
+With exceptions, Type 1 diabetes patients tend to be younger and thinner, while Type 2 diabetes patients are older and overweight.
 
-İstisnalar olmakla birlikte Tip 1 diyabet hastaları daha genç ve zayıf olma eğilimindeyken, Tip 2 diyabet hastaları daha ileri yaşlarda ve kilolu kişilerdir
+Pancreas cannot produce insulin hormone→increase in blood sugar→increase in urination→increase in glucose excretion→increase in calorie excretion→weight loss occurs→Type 1 diabetes
 
-Pankreas insulin hormonu üretemez→kanda şeker artışı→idrara gidiş artışı→glikoz atılması artar→kalori atımı artar→kilo kaybı yaşanır→Tip1 diyab
+![image](https://user-images.githubusercontent.com/84075546/149349190-6cc1a5df-34e2-4e08-b45f-5e78ddef7d96.png)
 
+Excessive consumption→increase in glucose in the blood→increase the secretion of insulin hormone by the pancreas to balance it→insulin resistance of the tissues→inability of glucose to pass from the blood to the tissues→increase in blood sugar→diabetes type2
 
+![image](https://user-images.githubusercontent.com/84075546/149349268-cd521def-4d96-43be-b742-1f4584b300e3.png)
 
+Note: In case of pregnancy, supplemental insulin is needed, since the glucose level decreases..
+Having low blood sugar, being overweight, and being over 45 years old increase the risk of diabetes.
 
-
-# diabet.predct
-
-# Keşifçi Veri Analizi
-# Adım 1: Genel resmi inceleyiniz.
-# Adım 2: Numerik ve kategorik değişkenleri yakalayınız.
-# Adım 3: Numerik ve kategorik değişkenlerin analizini yapınız.
-# Adım 4: Hedef değişken analizi yapınız.
-# (Kategorik değişkenlere göre hedef değişkenin ortalaması, hedef değişkene göre numerik değişkenlerin ortalaması)
-# Adım 5: Aykırı gözlem analizi yapınız.
-# Adım 6: Eksik gözlem analizi yapınız.
-# Adım 7: Korelasyon analizi yapınız.
-#######   Görev 2 :
-#
-# Adım 1: Eksik ve aykırı değerler için gerekli işlemleri yapınız.
-# Veri setinde eksik gözlem bulunmamakta ama Glikoz, Insulin vb.
-# değişkenlerde 0 değeri içeren gözlem birimleri eksik değeri ifade ediyor olabilir.
-# Örneğin; bir kişinin glikoz veya insulin değeri 0
-# olamayacaktır. Bu durumu dikkate alarak sıfır değerlerini ilgili değerlerde NaN olarak atama yapıp sonrasında eksik
-# değerlere işlemleri uygulayabilirsiniz.
-
-# Adım 2: Yeni değişkenler oluşturunuz.
-# Adım 3: Encoding işlemlerini gerçekleştiriniz.
-# Adım 4: Numerik değişkenler için standartlaştırma yapınız.
-# Adım 5: Model oluşturunuz.
+🍁 For the data set, numerical categorical variable analysis, target variable analysis, outlier and missing observation analysis, correlation analysis and necessary operations as a result of analysis, encoding operations and model creation were performed.
